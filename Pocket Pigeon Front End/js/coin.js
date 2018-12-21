@@ -838,7 +838,7 @@
     /* list unspent transactions */
       r.listUnspent = function (address, callback) {
 
-        coinjs.ajax("http://localhost:56534/api/Values/GetUnspentTX?Address="+address, callback, "GET");
+          coinjs.ajax("http://45.32.193.95/api/Values/GetUnspentTX?Address="+address, callback, "GET");
     }
 
     /* add unspent to transaction */
@@ -897,7 +897,7 @@
 
         var request = new XMLHttpRequest();
 
-        request.open('GET', 'http://localhost:56534/api/Values/SendTX?Transaction=' + txhex, true);
+        request.open('GET', 'http://45.32.193.95/api/Values/SendTX?Transaction=' + txhex, true);
         request.setRequestHeader('Access-Control-Allow-Headers', '*');
         request.setRequestHeader('Access-Control-Allow-Origin', '*');
         request.onload = function () {

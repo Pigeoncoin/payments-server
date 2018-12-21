@@ -1,0 +1,4 @@
+D:\Repos\Payments-Server\payments-server\BackEnd Server\obj\Debug\OneClickMinerPool.dll
+D:\Repos\Payments-Server\payments-server\BackEnd Server\obj\Debug\OneClickMinerPool.pdb
+C:\Repos\Payments-Server\payments-server\BackEnd Server\obj\Debug\OneClickMinerPool.dll
+C:\Repos\Payments-Server\payments-server\BackEnd Server\obj\Debug\OneClickMinerPool.pdb

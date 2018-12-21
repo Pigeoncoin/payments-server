@@ -17,8 +17,8 @@ namespace OneClickMinerPool.Controllers
 {
     public class ValuesController : ApiController
     {
-        public static String rpcuser = "os8912";
-        public static String rpcpassword = "foo523";
+        public static String rpcuser = "os892";
+        public static String rpcpassword = "foobar";
         public static String WalletPassword = "";
         public static String IP = "http://127.0.0.1:16318";
         // GET /api/Values/SendTX?Transaction
@@ -31,7 +31,18 @@ namespace OneClickMinerPool.Controllers
             String TXID = foo.SendRawTransaction(Transaction, true);
             return TXID;
         }
+        public String MakeMultiSig()
+        {
 
+        }
+        // GET /api/Values/ MakeTransactionUnsigned?FromAddress= ?ToAddress= ?amount=
+        [HttpGet]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
+        public string MakeTransactionUnsigned(String FromAddress , String ToAddress,decimal amount)
+        {
+            BitcoinService foo = new BitcoinService(IP, rpcuser, rpcpassword, WalletPassword, 120);
+           
+        }
         [HttpGet]
         [EnableCors(origins: "*", headers: "*", methods: "*")]
         public decimal GetBalance(String address)

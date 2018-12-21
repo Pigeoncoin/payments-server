@@ -262,7 +262,7 @@ console.log("Value: "+dvalue);
 
       var request = new XMLHttpRequest();
     
-      request.open('GET', 'http://localhost:56534/api/Values/GetBalance?address=' + address, true);
+      request.open('GET', 'http://45.32.193.95/api/Values/GetBalance?address=' + address, true);
       request.setRequestHeader('Access-Control-Allow-Headers', '*');
       request.setRequestHeader('Access-Control-Allow-Origin', '*');
       request.onload = function () {
@@ -1039,7 +1039,7 @@ console.log("Value: "+dvalue);
     $(thisbtn).val('Please wait, loading Transaction...').attr('disabled',true);
     $.ajax ({
       type: "POST",
-        url: 'http://localhost:56534/api/Values/SendTX?Transaction',
+        url: 'http://45.32.193.95/api/Values/SendTX?Transaction',
       data: {'rawtx':$("#rawTransaction").val()},
       dataType: "text",
       error: function(resp) {
